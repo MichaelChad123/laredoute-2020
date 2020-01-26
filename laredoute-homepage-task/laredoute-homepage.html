@@ -1,0 +1,334 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LaRedoute</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+</head>
+    
+<p style="margin: 0 auto; padding: 0;"><style type="text/css">
+    
+    @font-face {font-family:'JustLovely'; src: url('fonts/TTF/JustLovely.ttf');}
+    
+    body {font-family: "Roboto",sans-serif;}
+    
+    a:hover {text-decoration: none;}
+    
+    img {width: 100%;}
+    
+    .laredoute-container {max-width: 1440px; margin: 0 auto;}
+    
+    .header {text-align: center; background-color: #fd5644;; color: #fff; padding: 15px; text-transform: uppercase; letter-spacing: 3px;}
+    
+    .header p {font-size: 20px; margin: 10px auto -10px;}
+    
+    .header h2 {font-family: 'JustLovely',sans-serif; text-transform: none; font-size: 100px; margin: 0 auto;}
+    
+    .header h3 {font-weight: 200; margin: -10px auto 0; font-size: 25px;}
+    
+    .header strong {font-weight: 400; font-size: 40px;}
+    
+    .christmas-top-offers {margin-top: 50px; margin-bottom: 50px; background-color: #225661; padding: 50px 30px; text-align: center; color: #fff; text-transform: uppercase; letter-spacing: 2px; font-weight: 300;}
+    
+    .top-offer-title {font-weight: 400;}
+    
+    .top-offer-title span {font-family: 'JustLovely',sans-serif; text-transform: none; color: #eb8576; font-size: 60px;}
+    
+    .top-offer p {color: #fff; border: 1px solid #fff; padding: 10px 0; margin: 15px auto; width: 50%;}
+    
+    .text-bottom {position: absolute; bottom: 15px; left: 0; right: 0; color: #000;}
+    
+    .secondary-offers {text-transform: uppercase; text-align: center; letter-spacing: 2px; margin: 100px auto;}
+    
+    .secondary-offers.clearfix > div:nth-child(1), .secondary-offers.clearfix > div:nth-child(3) {margin-top: 100px;}
+    
+    .second-offer-pod {padding: 0 30px;}
+    
+    .second-offer-title, .second-offer-title-top {position: absolute; top: 10px; left: 0; right: 0; color: #fff; font-weight: 300; font-size: 18px;}
+    
+    .second-offer-title span, .jetsetters {font-family: 'JustLovely',sans-serif; text-transform: none; color: #eb8576; font-size: 50px;}
+    
+    .second-offer-pod p {color: #000; border: 1px solid #000; margin: 20px auto; padding: 15px 10px; width: 80%; font-size: 12px;}
+    
+    .second-offer-title-top p {width: 50%;}
+    
+    .christmas-ready {background: #f7f2ef; padding: 30px 50px; margin-bottom: 100px;}
+    
+    .christmas-ready-title {width: 500px; text-align: center; margin: 0 auto 50px; letter-spacing: 1px;}
+    
+    .christmas-ready-title h2 {font-weight: 400; text-transform: uppercase; letter-spacing: 2px; font-size: 22px;}
+    
+    .party-ready {background: url(images/Stone%20background.jpg); background-repeat: no-repeat; margin-bottom: 100px; height: 450px;}
+    
+    .left-side-image {padding-left: 0;}
+    
+    .right-side-image {padding-right: 0;}
+    
+    .left-side-image, .center-text, .right-side-image {height: 450px; text-align: center;}
+    
+    .left-side-image img, .right-side-image img {height: 100%; object-fit: cover;}
+    
+    .center-text-content {position: relative; top: 70px; width: 350px; letter-spacing: 1px; margin: 0 auto;}
+    
+    .center-text-content img {width: 300px; margin: 0 auto;}
+    
+    .center-text-content p {margin: 30px auto; font-size: 16px; text-align: center;}
+    
+    .button p {text-align: center; margin: 20px auto; border: 1px solid #000; width: 250px; padding: 10px; text-transform: uppercase; color: #000;}
+    
+    .guest-ready {background: url(images/mint%20background_LOW_RES.jpg); height: 450px; margin-bottom: 100px; background-repeat: no-repeat;}
+    
+    .slick-slide {height: auto;}
+    
+    .slick-dots li button:before {font-size: 40px;}
+    
+    
+    @media (max-width: 1024px) {
+        
+        .christmas-top-offers.clearfix > div:nth-child(2) {height: 500px;}
+        
+        .christmas-top-offers.clearfix > div:nth-child(2) > img {height: 100%;}
+        
+        .top-offer p {width: 70%;}
+        
+        .secondary-offers.clearfix > div:nth-child(2) {height: 600px;}
+        
+        .secondary-offers.clearfix > div:nth-child(2) > img {height: 100%; object-fit: cover;}
+        
+        .second-offer-pod {padding: 0 15px;}
+        
+        .center-text-content {width: auto; height: 350px;}
+        
+        .center-text-content img {margin: 0 auto;}
+        
+        .party-ready, .guest-ready {height: auto;}
+    }
+    
+    @media (max-width: 768px) {
+        
+        .christmas-top-offers.clearfix > div:nth-child(2), .christmas-top-offers.clearfix > div:nth-child(2) > img {height: auto;}
+        
+        .top-offer {margin: 30px 0 40px;}
+        
+        .top-offer p {width: 250px;}
+        
+        .secondary-offers.clearfix > div:nth-child(2) {height: auto;}
+        
+        .secondary-offers.clearfix > div:nth-child(2) > img {height: auto; object-fit: contain;}
+        
+        .center-text-content {height: 350px;}
+        
+        .right-side-image {display: none;}
+        
+        #slick-slide00 > div > div > div.col-md-4.center-text {height: 350px;}
+        
+        .party-ready {margin-bottom: 0px;}
+    }
+    
+    
+    
+    @media (max-width: 425px) {
+        
+        .christmas-top-offers {padding: 0;}
+        
+        .secondary-offers {margin: 50px auto;}
+        
+        .secondary-offers.clearfix > div:nth-child(1), .secondary-offers.clearfix > div:nth-child(3) {margin: 0;}
+        
+        .second-offer-pod {margin: 30px auto; padding: 0 15px;}
+        
+        .second-offer-pod p {width: 100%;}
+        
+        .second-offer-title-top p {width: 70%; margin-top: -15px;}
+        
+        .christmas-ready {padding: 30px 0;}
+        
+        .center-text {height: 350px;}
+        
+        .left-side-image {padding: 0;}
+        
+        .christmas-ready-title {width: auto;}
+        
+        .button p {margin: 50px auto;}
+    }
+    
+    
+    
+</style></p>
+    
+    
+<body>
+    
+<div class="laredoute-container">
+    
+    <div class="header">
+        <p>Get ahead for</p>
+        <h2>Christmas</h2>
+        <h3>Up to <strong>50% off</strong> <br />everything</h3>
+    </div>
+    
+    <!-- THIS IS WHERE THE TEENAGE DREAMS, FIRST CHRISTMAS & LITTLE WISHES HTML STARTS -->
+    
+    <div class="christmas-top-offers clearfix">
+        <div class="col-md-4 top-offer">
+            <h3 class="top-offer-title">Teenage <span>dreams</span></h3>
+            <img src="images/teenage-dreams.png">
+            <a href="https://www.laredoute.co.uk/"><p>Shop teens gifts</p></a>
+        </div>
+        
+        <div class="col-md-4 top-offer">
+            <img src="images/first-christmas.png">
+            <div class="text-bottom">
+                <h3 class="top-offer-title">First <span>Christmas</span></h3>
+                <a href="https://www.laredoute.co.uk/"><p style="color: #000; border: 1px solid #000;">Shop baby gifts</p></a>
+            </div>
+        </div>
+        
+        <div class="col-md-4 top-offer">
+            <h3 class="top-offer-title">Little <span>wishes</span></h3>
+            <img src="images/little-wishes.png">
+            <a href="https://www.laredoute.co.uk/"><p>Shop kids gifts</p></a>
+        </div>
+    </div>
+    
+    <!-- THIS IS WHERE THE TEENAGE DREAMS, FIRST CHRISTMAS & LITTLE WISHES HTML ENDS -->
+    
+    <!-- THIS IS WHERE THE HEALTHY TYPES, JET SETTERS & TECH LOVERS HTML STARTS -->
+    
+    <div class="secondary-offers clearfix">
+        <div class="col-md-4 second-offer-pod">
+            <h3 class="second-offer-title">Fit for <span>healthy</span> types</h3>
+            <img src="images/healthy-lovers.png">
+            <a href="https://www.laredoute.co.uk/"><p>Shop health &amp; wellbeing gifts</p></a>
+        </div>
+        
+        <div class="col-md-4 second-offer-pod">
+            <img src="images/jet-setters.png">
+            <div class="second-offer-title-top" style="color: #000;">
+                <h3>For the <br/> <span class="jetsetters" style="color: #fff;">jet setters</span></h3>
+                <a href="https://www.laredoute.co.uk/"><p>Shop travel gifts</p></a>
+            </div>
+        </div>
+        
+        <div class="col-md-4 second-offer-pod">
+            <h3 class="second-offer-title">For the <span>tech</span> lovers</h3>
+            <img src="images/tech-lovers.png">
+            <a href="https://www.laredoute.co.uk/"><p>Shop technology gifts</p></a>
+        </div>
+    </div>
+    
+    <!-- THIS IS WHERE THE HEALTHY TYPES, JET SETTERS & TECH LOVERS HTML ENDS -->
+    
+    <!-- THIS IS WHERE THE GET CHRISTMAS READY CAROUSEL HTML STARTS -->
+    
+    <div class="christmas-ready">
+        <div class="christmas-ready-title">
+            <h2>Get Christmas Ready</h2>
+            <p>From shimmer &amp; sparkle, to seasonal necessities we have everything you need to get your wardrobe &amp; home Christmas ready!</p>
+        </div>
+        
+        <div class="christmas-ready-carousel">
+        
+        <div class="party-ready">
+            <div class="col-md-4 left-side-image">
+                <img src="build-files/Gift-Guide-Images/M_Party-Ready.png">
+            </div>
+            
+            <div class="col-md-4 center-text">
+                <div class="center-text-content">
+                    <img src="build-files/Titles/DT_Party-Ready.png">
+                    <p>With tableware, glasses and decorations to get the party underway and fashion accessories to make you sparkle, look no further to become the perfect host!</p>
+                </div>
+            </div>
+            
+            <div class="hidden-xs col-md-4 right-side-image">
+                <img src="build-files/Gift-Guide-Images/M_Party-Ready-2.jpg">
+            </div>
+            
+            <div class="col-md-12 button">
+                <a href="https://www.laredoute.co.uk/"><p>Shop Party Ready</p></a>
+            </div>
+        </div>
+            
+        <div class="guest-ready">
+            <div class="col-md-6 left-side-image">
+                    <img src="build-files/Gift-Guide-Images/M_Guest-Ready.jpg">
+                </div>
+            
+            <div class="col-md-6">
+                <div class="center-text-content">
+                    <img src="build-files/Titles/M_Cosy-Up.png">
+                    <p>We have everything you need this Christmas to make your home welcoming, from dining furniture fit for the main event to bedding they'll love to snuggle up in.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-12 button">
+                <a href="https://www.laredoute.co.uk/"><p>Shop home</p></a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script type="text/javascript">
+    
+var everyissLoaded = setInterval(function() {
+    if (/loaded|complete/.test(document.readyState)) {
+      clearInterval(everyissLoaded);
+//This is where you functions start:
+    	
+      
+$(window).on('resize orientationchange', function() {
+$('.christmas-ready-carousel').slick('resize');
+});
+
+$('.christmas-ready-carousel').slick({
+infinite: true,
+dots: true,
+autoplay: true,
+autoplaySpeed: 6000,
+slidesToShow: 1,
+slidesToScroll: 1,
+responsive: [
+{
+breakpoint: 9999,
+settings: "slick"
+},
+{
+breakpoint: 992,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1,
+infinite: true,
+dots: true,
+autoplay: true,
+autoplaySpeed: 6000}
+},
+{
+breakpoint: 768,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1,
+infinite: true,
+dots: true,
+autoplay: true,
+autoplaySpeed: 6000}
+},
+]
+});
+        
+}
+
+}, 0);
+    
+</script>
+
+</body>
